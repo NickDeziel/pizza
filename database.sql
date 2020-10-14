@@ -1,4 +1,6 @@
 CREATE DATABASE pizza_store;
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 
 CREATE TABLE tblCustomers(
 custID INT(6) PRIMARY KEY,
